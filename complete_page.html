@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Complete page with Bootstrap!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <style>
+      footer {
+        height: 100px;
+      }
+
+      #main {
+        margin-bottom: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- INIZIO NAVBAR -->
+    <nav class="navbar bg-dark navbar-expand-md" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top me-1"
+          />
+          EPICODE
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="bi bi-list fs-2"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Full Stack</a></li>
+                <li><a class="dropdown-item" href="#">Data Analyst</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Everything else</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Coming soon</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- FINE NAVBAR -->
+
+    <div class="container mt-4" id="main">
+      <div class="row justify-content-center">
+        <div class="col col-12 col-md-8 col-lg-6">
+          <!-- INIZIO CAROUSEL -->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://placedog.net/400/300"
+                  class="d-block w-100"
+                  alt="dog pic"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placedog.net/400/300"
+                  class="d-block w-100"
+                  alt="dog pic"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placedog.net/400/300"
+                  class="d-block w-100"
+                  alt="dog pic"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://placedog.net/400/300"
+                  class="d-block w-100"
+                  alt="dog pic"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>
+                    Some representative placeholder content for the fourth
+                    slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- FINE CAROUSEL -->
+        </div>
+      </div>
+      <!-- INIZIO CARDS -->
+      <!-- voglio ottenere col-12 col-md-6 col-lg-4 col-xl-3 mb-4 -->
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mt-3"
+      >
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img
+              src="https://placekitten.com/300/200"
+              class="card-img-top"
+              alt="cat picture"
+            />
+            <div class="card-body d-flex flex-column justify-content-between">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content. Some quick example text to build
+                on the card title and make up the bulk of the card's content.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FINE CARDS -->
+      <!-- INIZIO FORM -->
+      <div class="row justify-content-center">
+        <div class="col col-12 col-md-6 mb-4">
+          <form>
+            <div class="mb-3">
+              <label for="generic" class="form-label">Generic input</label>
+              <input
+                type="text"
+                class="form-control"
+                id="generic"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="color"
+                class="form-control"
+                id="generic"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="datetime-local"
+                class="form-control"
+                id="generic"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                required
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                required
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <!-- FINE FORM -->
+    </div>
+    <!-- INIZIO FOOTER -->
+    <footer class="text-bg-dark fixed-bottom py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <ul
+              class="list-unstyled d-flex flex-column h-100 justify-content-center mb-0"
+            >
+              <li>
+                <a
+                  class="text-decoration-none text-light"
+                  href="https://www.google.com"
+                  target="_blank"
+                  >GOOGLE</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none text-light"
+                  href="https://www.bing.com"
+                  target="_blank"
+                  >BING</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none text-light"
+                  href="https://duckduckgo.com/"
+                  target="_blank"
+                  >DUCKDUCKGO</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col text-center d-flex flex-column justify-content-center"
+          >
+            Made with <i class="bi bi-balloon-heart-fill fs-5"></i> by EPICODE
+          </div>
+          <div class="col text-center">
+            <ul
+              class="list-unstyled d-flex flex-column h-100 justify-content-center mb-0"
+            >
+              <li>
+                <a class="text-decoration-none text-light" href="#">Home</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-light" href="#">Courses</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-light" href="#"
+                  >Coming soon</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FINE FOOTER -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
